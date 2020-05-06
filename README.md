@@ -1,4 +1,4 @@
-# B5111299midterm523419
+# Lab2AngularApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.7.
 

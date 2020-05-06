@@ -1,0 +1,24 @@
+<div class="container" style="margin-top:60px">
+    <div class="card bg-primary text-white">
+        <div class="card-body">
+            <h4 class="card-title">Parent</h4>
+
+            <div class="form-group">
+                <input type="text" class="form-control" [(ngModel)]="textMessage" aria-describedby="helpId">
+            </div>
+            Message from Child : {{status}}
+            <p class="card-text">
+                
+                <button type="button" class="btn btn-light" (click)="onCLickParent()">Send to Child</button>
+                <button type="button" class="btn bg-secondary" (click)="onClickViewChild()">Access Property in Child</button><br><br>
+                Message from Child : {{childMessage}}
+                <br><br>
+                <app-child [parentMessage]="parentMessage" (messageEvent)="receiveMessage($event)"></app-child>
+                
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
